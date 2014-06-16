@@ -3,7 +3,7 @@ danceconvention.net API
 May 2014
 
 ## API base URL 
-https://danceconvention.net/eventdirector/rest
+`https://danceconvention.net/eventdirector/rest`
 
 ## API Methods
 - `/eventinfo/EVENT_ID/signups` - event signups

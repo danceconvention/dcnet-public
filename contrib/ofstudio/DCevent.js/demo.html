@@ -1,38 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
+    <meta charset="UTF-8">
     <title>dcevent.js demo</title>
-    <meta charset="utf-8" />
 </head>
 <body>
 
-    <h1>Event participants</h1>
-    <div data-dcevent="69750" data-select='signups'>
+    <h1>dcevent.js demo</h1>
+
+    <h2>All event participants</h2>
+    <div data-dcevent="69750" data-select="signups">
         <img src="ajaxLoad.gif">
     </div>
 
     <h2>ProAm JnJ</h2>
     <h3>Am Leaders</h3>
-     <div data-dcevent="69750" data-contest="ProAm Jack n' Jill" data-select='leaders'>
+    <div data-dcevent="69750" data-contest="ProAm Jack n' Jill" data-select="leaders">
         <img src="ajaxLoad.gif">
     </div>
 
     <h2>Fast Feet Strictly</h2>
     <h3>Couples</h3>
-    <div data-dcevent="69750" data-contest="Fast Feet Strictly" data-select='couples'>
-        <img src="ajaxLoad.gif">
-    </div>
-    
-    <h3>Seeking Followers</h3>
-    <div data-dcevent="69750" data-contest="69756" data-select='seeking/follows'>
+    <div data-dcevent="69750" data-contest="Fast Feet Strictly" data-select="couples">
         <img src="ajaxLoad.gif">
     </div>
 
-    ...etc
-
-    <!-- Requires jQuery -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Place this script tag at the bottom of the page-->
     <script src="dcevent.js"></script>
+
+    <!-- Custom danceconvention API URL can be specified via data-dcevent-api attribute -->
+    <!--<script data-dcevent-api="http://dev.ofstudio.ru/danceconvention/rest/" src="dcevent.min.js"></script>-->
 
 </body>
 </html>
