@@ -2,7 +2,7 @@ DCevent.js
 ===
 Browser-side implementation of   [danceconvention.net](https://danceconvention.net/) API
 
-_Source code can be found in production-ready script can be found in 
+_Source code can be found in 
 [ofstudio/DCevent.js](https://github.com/ofstudio/DCevent.js)_
 
 
