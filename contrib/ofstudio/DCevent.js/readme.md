@@ -2,7 +2,7 @@ DCevent.js
 ===
 Browser-side implementation of   [danceconvention.net](https://danceconvention.net/) API
 
-_Source code can be found in 
+_Source code can be found at 
 [ofstudio/DCevent.js](https://github.com/ofstudio/DCevent.js)_
 
 
@@ -11,17 +11,17 @@ _Source code can be found in
 
 ## Install
 
-1. Download `dcevent.min.js` to your website directory
+1. Download `dcevent.min.js` into your website directory
 2. Place `<script>` tag near the bottom of your page. Example:     
 `<script src="dcevent.min.js"></script>`
 
 ## Usage
 
-Place container somewhere in the page like this:
+Place container code somewhere in your page like this:
 
 `<div data-dcevent="69750" data-contest="Fast Feet Strictly" data-select="couples"></div>`
 
-This will output list of formed _couples_ of _Fast Feet Strictly_ contest of event with ID _69750_.
+This will output list of formed `couples` of `Fast Feet Strictly` contest of event with ID `69750`.
 
 ### Parameters 
 - `data-dcevent`: ID of your event. Event ID can be found on danceconvention website. For example:    
@@ -87,13 +87,13 @@ Custom URL of danceconvention API can be specified in the `script` tag:
 
 ### DCevent object 
 
-DCevent global object properties:
+`DCevent` global object properties:
 
 - `api( eventID, [api_url] )`: (_Function_) API interface
 - `apiBaseUrl`: (_String_) default URL of danceconvention API
-- `version`: - (_String_) version of DCevent.js
+- `version`: (_String_) version of DCevent.js
 
-#### DCevent.api
+#### DCevent.api interface
 
 Asynchronous interface to danceconvention API.
 
@@ -104,7 +104,7 @@ Usage:
 Arguments:
 
 - `eventId`: ID of event
-- `apiUrl`: (optional) URL of danceconvention API
+- `apiUrl`: URL of danceconvention API (optional, if not specified `DCevent.apiBaseUrl` will be used)
 
 Methods: 
 
@@ -115,7 +115,7 @@ Methods:
 Example:
 
 ```javascript
-var api = DCevent("69750"); 
+var api = DCevent.api("69750"); 
 api.getContestSignups("ProAm Jack n' Jill", "follows", function (data) {
     console.log(data);
 });
