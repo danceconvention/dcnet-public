@@ -33,6 +33,7 @@ This will output list of formed `couples` of `Fast Feet Strictly` contest of eve
     - `couples`: formed couples (Strictly, Classic, etc)
     - `seeking/leaders`: leaders seeking followers (for divisions with "looking for a partner" option)
     - `seeking/follows`: followers seeking leaders (for divisions with "looking for a partner" option)
+- `data-format-hook`: hook function to format data (also can be set globally in the `script` tag. See `demo.html` for example) 
     
 ### All event participants
 
@@ -74,7 +75,7 @@ To output full list of registered participants (with `APPROVED` and `PAID` statu
 
 ```
 
-_More examples can be found in demo.html_
+_More examples can be found in `demo.html`_
 
 ## Advanced usage
 
@@ -132,6 +133,11 @@ in CORS implementation in IE8 and IE9)_
 
 ## Release History
 
+* _2014-07-28_ / **v0.0.2**   
+
+    - Added data-format-hook option
+    - Bugfixes (doubled spaces)
+    
 * _2014-06-16_ / **v0.0.1**   
 
     - jQuery agnostic (no external dependencies)
@@ -150,3 +156,4 @@ in CORS implementation in IE8 and IE9)_
 ## License
 
 Copyright (c) 2014 [Oleg Fomin](mailto:ofstudio@gmail.com). Licensed under the MIT license.
+

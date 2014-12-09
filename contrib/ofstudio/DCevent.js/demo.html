@@ -20,8 +20,15 @@
     </div>
 
     <h2>Fast Feet Strictly</h2>
-    <h3>Couples</h3>
-    <div data-dcevent="69750" data-contest="Fast Feet Strictly" data-select="couples">
+    <h3>Couples (data-format-hook example)</h3>
+    <!-- data-format-hook example -->
+    <script>
+        // Hooking function (reverse string for example)
+        function reverseStr (s) {
+            return s.split("").reverse().join("");
+        }
+    </script>
+    <div data-dcevent="69750" data-contest="Fast Feet Strictly" data-select="couples" data-format-hook="reverseStr">
         <img src="ajaxLoad.gif">
     </div>
 
