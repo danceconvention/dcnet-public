@@ -85,6 +85,10 @@ Custom URL of danceconvention API can be specified in the `script` tag:
  
 `<script data-dcevent-api="http:/some.new.url/of/api/" src="dcevent.min.js"></script>`
 
+### Specify custom language
+ 
+`<script data-dcevent-lang="ru" src="dcevent.min.js"></script>`
+
 
 ### DCevent object 
 
@@ -132,6 +136,10 @@ in CORS implementation in IE8 and IE9)_
  
 
 ## Release History
+
+* _2017-12-11_ / **v0.0.3**   
+
+    - data-dcevent-lang attribute
 
 * _2014-07-28_ / **v0.0.2**   
 
